@@ -1,5 +1,5 @@
 # BelgiumPopulationChartFrontend
 
-<img src="https://i.imgur.com/GAAuGeu.png">
-
-https://statbel.fgov.be/nl/open-data?category=23
+Blue                                 |Orange                               |Yellow
+:-----------------------------------:|:-----------------------------------:|:-----------------------------------:|
+![](https://i.imgur.com/PSiyR3Y.png) |![](https://i.imgur.com/RTejoIP.png) |![](https://i.imgur.com/ZtyLhBT.png)
