@@ -26,10 +26,16 @@ function draw() {
 
     pixelizedData.forEach(data => {
         const newData = getCoords(xExtrema, yExtrema)(data);
-        const size = data.amount / (amountExtrema.max / 50);
+        const size = Math.round(data.amount / (amountExtrema.max / 50));
+        console.log(Math.round(data.amount / (amountExtrema.max / 100)));
+        var a = Math.round((data.amount / (amountExtrema.max / 99))).toString(16);
+        if (a.length === 1)
+            a = '0' + a;
         ctx.beginPath();
         ctx.arc(newData.x - size / 2, mapHeight - (newData.y - size / 2), size, 0, 2 * Math.PI, false);
-        ctx.fillStyle = '#2980b9';
+        //ctx.fillStyle = '#2980b9';
+        ctx.fillStyle = '#0000ff99';
+ //       console.log(ctx.fillStyle);
         ctx.fill();
         ctx.fillStyle = 'black';
         ctx.font = (size / 2) + 'px Calibri';
